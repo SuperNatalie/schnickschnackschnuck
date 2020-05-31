@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Schnick Schnack Schnuck</title>
+</head>
+<body>
+    <div class="around">
+    <h1>Schnick, Schnack, Schnuck</h1>
+    <div id="spielrunden">
+        <img src="./assets/img/all.png" alt="allIMG" id="all">
+
+    <p>Wie viele Runden möchtest du spielen?</p>
+   
+    <div class="radio">
+        <input type="radio" id="round3" value="3" name="choice">
+        <label for="round3">3</label><br>
+        <input type="radio" id="round5" value="5" name="choice">
+        <label for="round5">5</label><br>
+        <input type="radio" id="round7" value="7" name="choice">
+        <label for="round7">7</label><br>
+    </div>
+
+        <Button onclick="start()" id="start-button">Spiel starten</Button>
+
+        </div>
+
+        <div id="game">
+
+        
+       
+    
+      
+      
+
+    <p>Wähle dein Symbol.</p>
+
+    <div id="symbols">
+        
+        <img src="./assets/img/stein.png" alt="stein" id="steinIMG" onclick="play(1);rounds()">
+        
+        <img src="./assets/img/papier.png" alt="papier" id="papierIMG" onclick="play(2);rounds()">
+
+        <img src="./assets/img/schere.png" id ="schereIMG" alt="schereIMG" onclick="play(3);rounds()">
+        <br>
+        <div id="chosenSymbols">
+
+        </div>
+        
+        <div id="answer"></div>
+    </div>
+    
+    
+    <div id="spielstand">
+    <div id="spielstandUser">0</div>
+    <div id="doppelpunkt">:</div>
+    
+    <div id="spielstandComp">0</div>
+</div>
+    <Button onclick="newGame()" id="newGame">  Neues Spiel</Button>
+</div>
+
+</div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
