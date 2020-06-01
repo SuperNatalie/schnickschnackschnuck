@@ -20,21 +20,25 @@ let spielrunden = document.getElementById("spielrunden");
 
 //check if rounds is checked
 
+
+function displayNone() {
+    game.style.display = "inherit";
+    spielrunden.style.display = "none";
+    buttonNewGame.style.display = "none";
+}
+
 function start() {
 
     if (button3.checked) {
-       game.style.display = "inherit";
-       spielrunden.style.display = "none";
-       buttonNewGame.style.display = "none";
+        displayNone();
    
     } else if (button5.checked) {
-       game.style.display = "inherit";
-       spielrunden.style.display = "none"; }
-       else if  
-       (button7.checked) {
-           game.style.display = "inherit";
-           spielrunden.style.display = "none"; }
-       else alert("Bitte wähle die Spielrunden aus!");
+        displayNone();
+
+    } else if (button7.checked) {
+        displayNone();
+
+        } else alert("Bitte wähle die Spielrunden aus!");
    }
 
 function play (symbol) {
