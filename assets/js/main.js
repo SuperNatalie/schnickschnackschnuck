@@ -38,7 +38,7 @@ function start() {
     } else if (button7.checked) {
         displayNone();
 
-        } else alert("Bitte wähle die Spielrunden aus!");
+        } else alert("Bitte wähle die Spielpunkte aus!");
    }
 
 function play (symbol) {
@@ -117,7 +117,6 @@ if (button7.checked && spielstandUser.innerHTML >= 7 ) {
         disableIMG();
 }
 }
-
 
 
 

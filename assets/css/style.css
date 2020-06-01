@@ -10,7 +10,7 @@ html, body {
 
 h1 {
     height: 20px;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 h3 {
@@ -57,7 +57,7 @@ img:hover {
     margin-left: auto;
     margin-right: auto;
     width: 250px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -122,5 +122,4 @@ border-radius: 50%;
     }
     #chosenSymbols {
         margin: 40px;
-}
 }
