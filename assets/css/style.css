@@ -24,7 +24,7 @@ h3 {
     border: 2px rgb(125, 123, 133) solid;
     border-radius: 10px;
     width: 90vw;
-    height: 95vh;
+    height: 120vh;
     margin-top: 10px;
     justify-content: center;
     margin-left: auto;
@@ -57,7 +57,7 @@ img:hover {
     margin-left: auto;
     margin-right: auto;
     width: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 
@@ -110,7 +110,7 @@ border-radius: 50%;
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 2em;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
     img {
         width: 90px;
@@ -122,4 +122,12 @@ border-radius: 50%;
     }
     #chosenSymbols {
         margin: 40px;
+    }
+    .around {
+        height: 90vh;
+     }
+     #all {
+         margin-bottom: 50px;
+     }
+
 }
