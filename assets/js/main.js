@@ -46,38 +46,45 @@ function play (symbol) {
     console.log(symbol,comp);
    
     if (symbol == comp){
-        answer.innerHTML = "Der Computer hat dasselbe wie du gewählt. Das war ein Unentschieden!"
+        ergebnis.innerHTML = "Ergebnis";
+        answer.innerHTML = "Der Computer hat dasselbe wie du gewählt. Das war ein Unentschieden!";
         chosenSymbols.innerHTML = "<img src='./assets/img/rock_tie.png'>" + "<img src='./assets/img/paper_tie.png'>" + "<img src='./assets/img/scissors_tie.png'>";
 
     }
     else if (symbol == rock && comp == paper){
+        ergebnis.innerHTML = "Ergebnis";
         answer.innerHTML = "Der Computer hat das Papier gewählt. Du hast leider verloren!";
         chosenSymbols.innerHTML = "<img src='./assets/img/rock_loose.png'>" + "<img src='./assets/img/papier.png'>";
         spielstandComp.innerHTML++ ;
 
     }
     else if (symbol == rock && comp == schere){
+        ergebnis.innerHTML = "Ergebnis";
         answer.innerHTML = "Der Computer hat die Schere gewählt. Du hast gewonnen!"
         chosenSymbols.innerHTML = "<img src='./assets/img/stein.png'>" + "<img src='./assets/img/scissors-loose.png'>"
         spielstandUser.innerHTML++ 
     }
 
     else if(symbol == schere && comp == paper){
+        ergebnis.innerHTML = "Ergebnis";
         answer.innerHTML = "Der Computer hat das Papier gewählt. Du hast gewonnen!"
         chosenSymbols.innerHTML = "<img src='./assets/img/schere.png'>" + "<img src='./assets/img/paper_loose.png'>"
         spielstandUser.innerHTML++ 
     }
     else if(symbol == schere && comp == rock){
+        ergebnis.innerHTML = "Ergebnis";
         answer.innerHTML = "Der Computer hat den Stein gewählt. Du hast leider verloren!"
         chosenSymbols.innerHTML = "<img src='./assets/img/scissors-loose.png'>" + "<img src='./assets/img/stein.png'>"
         spielstandComp.innerHTML++ 
     }
     else if(symbol == paper && comp == rock){
+        ergebnis.innerHTML = "Ergebnis";
         answer.innerHTML = "Der Computer hat den Stein gewählt. Du hast gewonnen!"
         chosenSymbols.innerHTML = "<img src='./assets/img/papier.png'>" + "<img src='./assets/img/rock_loose.png'>"
         spielstandUser.innerHTML++ 
     }
     else if(symbol == paper && comp == schere){
+        ergebnis.innerHTML = "Ergebnis";
         answer.innerHTML = "Der Computer hat die Schere gewählt. Du hast leider verloren!"
         chosenSymbols.innerHTML = "<img src='./assets/img/paper_loose.png'>" + "<img src='./assets/img/schere.png'>"
         spielstandComp.innerHTML++ 
@@ -112,7 +119,7 @@ if (button7.checked && spielstandUser.innerHTML >= 7 ) {
     answer.innerHTML += ("<br><h2>Hurra! Du hast das Spiel gewonnen!</h2>");
     disableIMG();
     }
-    else if (button5.checked && spielstandComp.innerHTML >= 7) { 
+    else if (button7.checked && spielstandComp.innerHTML >= 7) { 
         answer.innerHTML += ("<br><h2>Schade, du hast das Spiel verloren! Nochmal?</h2>");
         disableIMG();
 }
